@@ -1,0 +1,37 @@
+{
+  "version": "prices_public_20260928",
+  "currency": "CNY",
+  "unit": "per_1m_tokens",
+  "fetched_at": "2026-09-28",
+  "source_url": "https://siliconflow.cn/pricing",
+  "status": "PUBLIC_PRICE_SNAPSHOT_NOT_EXECUTION_AUTHORIZATION",
+  "availability_checked_this_run": false,
+  "note": "仅核对公开价格页，未调用账号 API。执行日期变化或价格变化时须重新核对并重出待批准记录。折算成本不是实际支付金额或支付硬上限。",
+  "slots": {
+    "low": "Qwen/Qwen3.5-27B",
+    "high": "zai-org/GLM-5.3"
+  },
+  "models": {
+    "Qwen/Qwen3.5-27B": {
+      "provider": "SiliconFlow",
+      "price_date": "2026-09-28",
+      "fetched_at": "2026-09-28",
+      "source_url": "https://siliconflow.cn/pricing",
+      "input_price_per_1m": 0.6,
+      "output_price_per_1m": 4.8,
+      "cached_input_price_per_1m": null,
+      "input_tier": "[0,128k)",
+      "note": "仅冻结输入 [0,128k) 档。本轮合成短材料远小于该档位；公开页未列缓存价，按既有代码回退为普通输入价。账号可用性未在本轮核对。"
+    },
+    "zai-org/GLM-5.3": {
+      "provider": "SiliconFlow",
+      "price_date": "2026-09-28",
+      "fetched_at": "2026-09-28",
+      "source_url": "https://siliconflow.cn/pricing",
+      "input_price_per_1m": 8.0,
+      "output_price_per_1m": 28.0,
+      "cached_input_price_per_1m": 2.0,
+      "note": "公开价格复核与本轮账号可用性核对分开；后者尚未进行。"
+    }
+  }
+}

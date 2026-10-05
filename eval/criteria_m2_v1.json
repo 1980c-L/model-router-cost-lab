@@ -1,0 +1,31 @@
+{
+  "version": "criteria_m2_v1",
+  "frozen_at": "2026-09-27",
+  "inherits": "criteria_v1",
+  "note": "M2 判据：从 criteria_v1 明确继承机检规则（coverage_threshold、refusal_phrase、extract/qa 的整体达标合成），新增摘要类逐事实语义覆盖人工项。不覆盖 criteria_v1.json；criteria_v1 的历史行为保持不变（grade.py 仅在判据显式给出 summary_human_items 时启用新项）。",
+  "coverage_threshold": 0.6,
+  "refusal_phrase": "资料中未找到相关依据",
+  "summary_human_items": [
+    "facts_covered_by_human",
+    "no_added_content_by_human"
+  ],
+  "overall_pass_rule": {
+    "extract": "format_pass（JSON 可解析 + 必填字段齐全）AND content_pass（与 answer_key 逐字段一致）；无人工项（与 criteria_v1 相同）",
+    "qa_grounded": "机检通过（非空 AND 期望拒答时含拒答短语）AND 人工三项 facts_correct / no_unsupported_claim / citation_supports（与 criteria_v1 相同）",
+    "summary": "mechanized_pass（长度不超上限 AND 覆盖关键词比例 >= coverage_threshold AND 无禁止词）AND 人工两项 facts_covered_by_human / no_added_content_by_human",
+    "unknown": "无法判定：只记 not_empty 并标人工（task_type_unrecognized）"
+  },
+  "human_items": {
+    "facts_correct": "关键事实是否与资料一致",
+    "no_unsupported_claim": "是否出现资料不支持的说法",
+    "citation_supports": "给出的依据或引用是否支持结论",
+    "facts_covered_by_human": "摘要对题集预冻结 summary_facts 的逐事实点语义覆盖：人工逐点记 true/false，全部必须事实点正确覆盖才通过；合法同义改写可以满足，关键词出现不能替代人工判断",
+    "no_added_content_by_human": "摘要是否新增了材料中没有的内容"
+  },
+  "notes": [
+    "机检与人工结果分别保留，人工不直接覆盖机检失败（11 号 §3）。",
+    "人工完成前 overall_pass 一律为 false，不得用机检结果代替人工结论。",
+    "题目的判据参数（answer_key / coverage_keywords / max_chars / expect_refusal / summary_facts）随题集 test_questions_v1.json 一起冻结；真实运行后不得临时放宽。",
+    "关键词覆盖继承 criteria_v1 的 coverage_threshold=0.6，逐题固定关键词。"
+  ]
+}

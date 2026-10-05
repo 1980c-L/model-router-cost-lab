@@ -1,0 +1,1169 @@
+{
+  "scope": "dev_v2 six questions per group, retrospective manual record",
+  "frozen_summary_passed_per_group": 2,
+  "mechanized_passed_per_group": 5,
+  "manual_record_and_passed_per_group": 5,
+  "length_limit_note": "D09's 200-character threshold was not included in its historical prompt; its failures cannot establish instructed length-control ability.",
+  "known_cost_cny": {
+    "low": 0.0027456,
+    "high": 0.068076
+  },
+  "items": [
+    {
+      "group": "low",
+      "test_id": "D01",
+      "question": {
+        "test_id": "D01",
+        "task_type_gold": "extract",
+        "question": "请从材料中抽取【检索层重构】这一项的排期信息，输出 JSON，字段：module、owner、deadline、risk_level。",
+        "materials": [
+          "本周项目周会纪要：检索层重构由李工负责，计划 2026-10-15 前完成，当前风险等级评估为中。接口联调由王工负责，时间未定。"
+        ],
+        "constraints": {
+          "require_json": true,
+          "required_fields": [
+            "module",
+            "owner",
+            "deadline",
+            "risk_level"
+          ],
+          "material_count": 1
+        },
+        "answer_key": {
+          "module": "检索层重构",
+          "owner": "李工",
+          "deadline": "2026-10-15",
+          "risk_level": "中"
+        },
+        "notes": "4 个字段：不触发 R5（阈值 6），预期走默认档 low"
+      },
+      "answer": "{\"module\": \"检索层重构\", \"owner\": \"李工\", \"deadline\": \"2026-10-15\", \"risk_level\": \"中\"}",
+      "answer_sha256": "99a6909224b61b4984024c1aceb4570b39811f2cb1b402e8365adf443a4d5bc4",
+      "recorded_human_items_pass": null,
+      "arithmetic_and": true,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0002736,
+            "latency_ms": 3034,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 37,
+              "prompt_tokens": 160
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 37,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 160,
+            "prompt_tokens": 160,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 197
+          }
+        },
+        "known_cost_cny": 0.0002736,
+        "total_cost_cny": 0.0002736,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 3062,
+        "quality": {
+          "content_pass": true,
+          "detail": {
+            "json_parsable": true,
+            "mismatched_fields": [],
+            "missing_fields": [],
+            "parsed": {
+              "deadline": "2026-10-15",
+              "module": "检索层重构",
+              "owner": "李工",
+              "risk_level": "中"
+            },
+            "strict_parse": true,
+            "type_mismatched": []
+          },
+          "format_pass": true,
+          "human_filled": false,
+          "human_pending": [],
+          "human_required": false,
+          "mechanized_pass": true,
+          "overall_pass": true,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "group": "low",
+      "test_id": "D02",
+      "question": {
+        "test_id": "D02",
+        "task_type_gold": "extract",
+        "question": "请从缺陷单中抽取 JSON，字段：ticket_id、severity、component、reporter、due_date、status。",
+        "materials": [
+          "缺陷单 BUG-231：严重级别 高，所属组件 向量索引缓存，报告人 陈工，要求 2026-10-08 前修复，当前状态 处理中。"
+        ],
+        "constraints": {
+          "require_json": true,
+          "required_fields": [
+            "ticket_id",
+            "severity",
+            "component",
+            "reporter",
+            "due_date",
+            "status"
+          ],
+          "material_count": 1
+        },
+        "answer_key": {
+          "ticket_id": "BUG-231",
+          "severity": "高",
+          "component": "向量索引缓存",
+          "reporter": "陈工",
+          "due_date": "2026-10-08",
+          "status": "处理中"
+        },
+        "notes": "6 个字段：触发 R5，预期走 high"
+      },
+      "answer": "{\"ticket_id\":\"BUG-231\",\"severity\":\"高\",\"component\":\"向量索引缓存\",\"reporter\":\"陈工\",\"due_date\":\"2026-10-08\",\"status\":\"处理中\"}",
+      "answer_sha256": "56a05f6b4bdc3d22fd809566728f7eeef90c6ef74aeda348e77fb3ff148d906b",
+      "recorded_human_items_pass": null,
+      "arithmetic_and": true,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003114,
+            "latency_ms": 2217,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 45,
+              "prompt_tokens": 159
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 45,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 159,
+            "prompt_tokens": 159,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 204
+          }
+        },
+        "known_cost_cny": 0.0003114,
+        "total_cost_cny": 0.0003114,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 2244,
+        "quality": {
+          "content_pass": true,
+          "detail": {
+            "json_parsable": true,
+            "mismatched_fields": [],
+            "missing_fields": [],
+            "parsed": {
+              "component": "向量索引缓存",
+              "due_date": "2026-10-08",
+              "reporter": "陈工",
+              "severity": "高",
+              "status": "处理中",
+              "ticket_id": "BUG-231"
+            },
+            "strict_parse": true,
+            "type_mismatched": []
+          },
+          "format_pass": true,
+          "human_filled": false,
+          "human_pending": [],
+          "human_required": false,
+          "mechanized_pass": true,
+          "overall_pass": true,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "group": "low",
+      "test_id": "D05",
+      "question": {
+        "test_id": "D05",
+        "task_type_gold": "qa_grounded",
+        "question": "根据资料说明，BM25 里的 k1 参数控制什么效果？",
+        "materials": [
+          "BM25 的词频部分使用饱和函数：k1 越大，单个词多次出现带来的收益越晚饱和；k1 越小，词频增加带来的收益更快趋于平稳。b 参数控制文档长度归一化的强度。"
+        ],
+        "constraints": {
+          "material_count": 1
+        },
+        "expect_refusal": false,
+        "notes": "单材料短问：预期默认档 low；人工核 facts_correct 等三项"
+      },
+      "answer": "根据资料，BM25 中的 **k1** 参数控制**词频饱和的速度**：\n\n*   **k1 越大**：单个词多次出现带来的收益**越晚饱和**（即词频增加带来的收益增长更持久）。\n*   **k1 越小**：词频增加带来的收益**更快趋于平稳**（即收益更早达到饱和）。",
+      "answer_sha256": "017f26f1c17299f2f38270f5d0a719e7013d65917ebb45828ad743aea74e9a00",
+      "recorded_human_items_pass": true,
+      "arithmetic_and": true,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0004632,
+            "latency_ms": 6102,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 81,
+              "prompt_tokens": 124
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 81,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 124,
+            "prompt_tokens": 124,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 205
+          }
+        },
+        "known_cost_cny": 0.0004632,
+        "total_cost_cny": 0.0004632,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 6127,
+        "quality": {
+          "content_pass": null,
+          "detail": {
+            "chars": 136,
+            "expect_refusal": false,
+            "not_empty": true,
+            "refusal_ok": true,
+            "refusal_phrase_present": false
+          },
+          "format_pass": null,
+          "human_filled": false,
+          "human_pending": [
+            "facts_correct",
+            "no_unsupported_claim",
+            "citation_supports"
+          ],
+          "human_required": true,
+          "mechanized_pass": true,
+          "overall_pass": false,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "group": "low",
+      "test_id": "D07",
+      "question": {
+        "test_id": "D07",
+        "task_type_gold": "qa_grounded",
+        "question": "根据资料，MRR 这个指标变大通常说明什么？",
+        "materials": [
+          "MRR 是第一个相关结果出现位置倒数的平均值。相关结果排得越靠前，MRR 越高；如果某题前若干条都拿不到相关结果，该题的倒数记为零。"
+        ],
+        "constraints": {
+          "material_count": 1
+        },
+        "expect_refusal": false,
+        "notes": "无比较/推理线索词：预期默认档 low"
+      },
+      "answer": "根据资料，MRR 变大通常说明**相关结果在搜索结果中的排名更靠前**。\n\n依据【材料1】中提到的“相关结果排得越靠前，MRR 越高”，MRR 是第一个相关结果出现位置倒数的平均值，因此该指标数值越大，代表系统能更快地（即在更靠前的位置）找到相关结果。",
+      "answer_sha256": "a7e70aa6284c62d8d8d6c14713cb2e6256823d3f30a19ab4f833e5feb5436fa2",
+      "recorded_human_items_pass": true,
+      "arithmetic_and": true,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.000423,
+            "latency_ms": 17985,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 74,
+              "prompt_tokens": 113
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 74,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 113,
+            "prompt_tokens": 113,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 187
+          }
+        },
+        "known_cost_cny": 0.000423,
+        "total_cost_cny": 0.000423,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 18011,
+        "quality": {
+          "content_pass": null,
+          "detail": {
+            "chars": 126,
+            "expect_refusal": false,
+            "not_empty": true,
+            "refusal_ok": true,
+            "refusal_phrase_present": false
+          },
+          "format_pass": null,
+          "human_filled": false,
+          "human_pending": [
+            "facts_correct",
+            "no_unsupported_claim",
+            "citation_supports"
+          ],
+          "human_required": true,
+          "mechanized_pass": true,
+          "overall_pass": false,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "group": "low",
+      "test_id": "D08",
+      "question": {
+        "test_id": "D08",
+        "task_type_gold": "summary",
+        "question": "请概括材料关于检索指标的说明，控制在 300 字以内。",
+        "materials": [
+          "检索评测常用三个指标。Hit@K 看规定的证据片段有没有进入前 K 条结果，它的分母是计分题数。MRR 看第一个相关结果排在第几位，位置越靠前分数越高。两个指标都只描述检索结果的位置，不判断最终回答是否正确，因此不能当作答案准确率使用。"
+        ],
+        "constraints": {
+          "material_count": 1,
+          "max_chars": 300
+        },
+        "criteria": {
+          "max_chars": 300,
+          "coverage_keywords": [
+            "Hit@K",
+            "MRR",
+            "分母"
+          ],
+          "forbidden_keywords": [
+            "答案准确率提高"
+          ]
+        },
+        "notes": "单材料摘要：预期默认档 low；人工核 no_added_content_by_human"
+      },
+      "answer": "材料指出检索评测常用三个指标，其中重点说明了两个：一是 Hit@K，用于判断规定的证据片段是否进入前 K 条结果，其分母为计分题数；二是 MRR（平均倒数排名），用于衡量第一个相关结果在列表中的位置，位置越靠前得分越高。材料强调，这两个指标仅描述检索结果的位置排序情况，并不判断最终生成的回答是否正确，因此不能将其作为答案准确率的依据。资料中未提及第三个指标的具体名称及定义。",
+      "answer_sha256": "29f23875738fe746679ecef0f32a3a9190e76071e69fd474c2837a9514fe5ccf",
+      "recorded_human_items_pass": true,
+      "arithmetic_and": true,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0005796,
+            "latency_ms": 10086,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 103,
+              "prompt_tokens": 142
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 103,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 142,
+            "prompt_tokens": 142,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 245
+          }
+        },
+        "known_cost_cny": 0.0005796,
+        "total_cost_cny": 0.0005796,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 10191,
+        "quality": {
+          "content_pass": null,
+          "detail": {
+            "chars": 188,
+            "coverage_hit": [
+              "Hit@K",
+              "MRR",
+              "分母"
+            ],
+            "coverage_missing": [],
+            "coverage_pass": true,
+            "coverage_ratio": 1.0,
+            "forbidden_hit": [],
+            "length_pass": true,
+            "max_chars": 300
+          },
+          "format_pass": null,
+          "human_filled": false,
+          "human_pending": [
+            "no_added_content_by_human"
+          ],
+          "human_required": true,
+          "mechanized_pass": true,
+          "overall_pass": false,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "group": "low",
+      "test_id": "D09",
+      "question": {
+        "test_id": "D09",
+        "task_type_gold": "summary",
+        "question": "请总结这三段材料共同说明的问题。",
+        "materials": [
+          "第一段：检索结果是否命中，取决于分词与分词权重的设置。",
+          "第二段：命中之后能否答对，取决于证据是否被正确组织进上下文。",
+          "第三段：这两件事需要分开验证，不能用一个指标代替另一个。"
+        ],
+        "constraints": {
+          "material_count": 3,
+          "max_chars": 200
+        },
+        "criteria": {
+          "max_chars": 200,
+          "coverage_keywords": [
+            "检索",
+            "生成",
+            "验证"
+          ],
+          "forbidden_keywords": [
+            "准确率提升"
+          ]
+        },
+        "notes": "三段材料：命中 R2，预期走 high"
+      },
+      "answer": "这三段材料共同说明了在检索增强生成（RAG）或类似系统中，**“检索命中”与“回答正确”是两个独立且关键的环节，需要分别验证，不能混为一谈**。\n\n具体而言：\n1. **检索阶段**（材料1）：取决于分词策略与权重设置，决定能否找到相关结果。\n2. **生成阶段**（材料2）：取决于证据是否被正确组织进上下文，决定能否基于检索结果给出正确答案。\n3. **评估原则**（材料3）：这两个环节必须分开验证，不能用单一指标同时衡量检索效果和生成质量。",
+      "answer_sha256": "ab8d91cc9fc45e1f9866baf08256dfcc650aece3a9a92c4d4f1355fc50232076",
+      "recorded_human_items_pass": true,
+      "arithmetic_and": false,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0006948,
+            "latency_ms": 8892,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 129,
+              "prompt_tokens": 126
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 129,
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 126,
+            "prompt_tokens": 126,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 255
+          }
+        },
+        "known_cost_cny": 0.0006948,
+        "total_cost_cny": 0.0006948,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 9003,
+        "quality": {
+          "content_pass": null,
+          "detail": {
+            "chars": 224,
+            "coverage_hit": [
+              "检索",
+              "生成",
+              "验证"
+            ],
+            "coverage_missing": [],
+            "coverage_pass": true,
+            "coverage_ratio": 1.0,
+            "forbidden_hit": [],
+            "length_pass": false,
+            "max_chars": 200
+          },
+          "format_pass": null,
+          "human_filled": false,
+          "human_pending": [
+            "no_added_content_by_human"
+          ],
+          "human_required": true,
+          "mechanized_pass": false,
+          "overall_pass": false,
+          "reason": "超长（224 > 200）"
+        }
+      }
+    },
+    {
+      "group": "high",
+      "test_id": "D01",
+      "question": {
+        "test_id": "D01",
+        "task_type_gold": "extract",
+        "question": "请从材料中抽取【检索层重构】这一项的排期信息，输出 JSON，字段：module、owner、deadline、risk_level。",
+        "materials": [
+          "本周项目周会纪要：检索层重构由李工负责，计划 2026-10-15 前完成，当前风险等级评估为中。接口联调由王工负责，时间未定。"
+        ],
+        "constraints": {
+          "require_json": true,
+          "required_fields": [
+            "module",
+            "owner",
+            "deadline",
+            "risk_level"
+          ],
+          "material_count": 1
+        },
+        "answer_key": {
+          "module": "检索层重构",
+          "owner": "李工",
+          "deadline": "2026-10-15",
+          "risk_level": "中"
+        },
+        "notes": "4 个字段：不触发 R5（阈值 6），预期走默认档 low"
+      },
+      "answer": "{\"module\": \"检索层重构\", \"owner\": \"李工\", \"deadline\": \"2026-10-15\", \"risk_level\": \"中\"}",
+      "answer_sha256": "99a6909224b61b4984024c1aceb4570b39811f2cb1b402e8365adf443a4d5bc4",
+      "recorded_human_items_pass": null,
+      "arithmetic_and": true,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.006516,
+            "latency_ms": 3357,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 189,
+              "prompt_tokens": 153
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 189,
+            "completion_tokens_details": {
+              "reasoning_tokens": 156
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 153,
+            "prompt_tokens": 153,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 342
+          }
+        },
+        "known_cost_cny": 0.006516,
+        "total_cost_cny": 0.006516,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 3385,
+        "quality": {
+          "content_pass": true,
+          "detail": {
+            "json_parsable": true,
+            "mismatched_fields": [],
+            "missing_fields": [],
+            "parsed": {
+              "deadline": "2026-10-15",
+              "module": "检索层重构",
+              "owner": "李工",
+              "risk_level": "中"
+            },
+            "strict_parse": true,
+            "type_mismatched": []
+          },
+          "format_pass": true,
+          "human_filled": false,
+          "human_pending": [],
+          "human_required": false,
+          "mechanized_pass": true,
+          "overall_pass": true,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "group": "high",
+      "test_id": "D02",
+      "question": {
+        "test_id": "D02",
+        "task_type_gold": "extract",
+        "question": "请从缺陷单中抽取 JSON，字段：ticket_id、severity、component、reporter、due_date、status。",
+        "materials": [
+          "缺陷单 BUG-231：严重级别 高，所属组件 向量索引缓存，报告人 陈工，要求 2026-10-08 前修复，当前状态 处理中。"
+        ],
+        "constraints": {
+          "require_json": true,
+          "required_fields": [
+            "ticket_id",
+            "severity",
+            "component",
+            "reporter",
+            "due_date",
+            "status"
+          ],
+          "material_count": 1
+        },
+        "answer_key": {
+          "ticket_id": "BUG-231",
+          "severity": "高",
+          "component": "向量索引缓存",
+          "reporter": "陈工",
+          "due_date": "2026-10-08",
+          "status": "处理中"
+        },
+        "notes": "6 个字段：触发 R5，预期走 high"
+      },
+      "answer": "{\"ticket_id\":\"BUG-231\",\"severity\":\"高\",\"component\":\"向量索引缓存\",\"reporter\":\"陈工\",\"due_date\":\"2026-10-08\",\"status\":\"处理中\"}",
+      "answer_sha256": "56a05f6b4bdc3d22fd809566728f7eeef90c6ef74aeda348e77fb3ff148d906b",
+      "recorded_human_items_pass": null,
+      "arithmetic_and": true,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.008276,
+            "latency_ms": 4649,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 253,
+              "prompt_tokens": 149
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 253,
+            "completion_tokens_details": {
+              "reasoning_tokens": 213
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 149,
+            "prompt_tokens": 149,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 402
+          }
+        },
+        "known_cost_cny": 0.008276,
+        "total_cost_cny": 0.008276,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 4676,
+        "quality": {
+          "content_pass": true,
+          "detail": {
+            "json_parsable": true,
+            "mismatched_fields": [],
+            "missing_fields": [],
+            "parsed": {
+              "component": "向量索引缓存",
+              "due_date": "2026-10-08",
+              "reporter": "陈工",
+              "severity": "高",
+              "status": "处理中",
+              "ticket_id": "BUG-231"
+            },
+            "strict_parse": true,
+            "type_mismatched": []
+          },
+          "format_pass": true,
+          "human_filled": false,
+          "human_pending": [],
+          "human_required": false,
+          "mechanized_pass": true,
+          "overall_pass": true,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "group": "high",
+      "test_id": "D05",
+      "question": {
+        "test_id": "D05",
+        "task_type_gold": "qa_grounded",
+        "question": "根据资料说明，BM25 里的 k1 参数控制什么效果？",
+        "materials": [
+          "BM25 的词频部分使用饱和函数：k1 越大，单个词多次出现带来的收益越晚饱和；k1 越小，词频增加带来的收益更快趋于平稳。b 参数控制文档长度归一化的强度。"
+        ],
+        "constraints": {
+          "material_count": 1
+        },
+        "expect_refusal": false,
+        "notes": "单材料短问：预期默认档 low；人工核 facts_correct 等三项"
+      },
+      "answer": "根据资料，BM25 中的 **k1 参数控制词频部分的饱和速度**，具体效果为：\n\n- **k1 越大**：单个词多次出现带来的收益越晚饱和，即词频的增益能持续更久；\n- **k1 越小**：词频增加带来的收益更快趋于平稳（更早饱和）。\n\n简言之，k1 决定了“一个词在文档中重复出现”对得分提升作用的衰减快慢。\n\n（补充说明：资料中还提到 b 参数控制的是文档长度归一化的强度，与 k1 的作用不同。）",
+      "answer_sha256": "3ce437621cb8c28319e853b283166ad4f6b946bd5e64cc52f62cc294a5069af9",
+      "recorded_human_items_pass": true,
+      "arithmetic_and": true,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.01038,
+            "latency_ms": 5385,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 337,
+              "prompt_tokens": 118
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 337,
+            "completion_tokens_details": {
+              "reasoning_tokens": 210
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 118,
+            "prompt_tokens": 118,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 455
+          }
+        },
+        "known_cost_cny": 0.01038,
+        "total_cost_cny": 0.01038,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 5410,
+        "quality": {
+          "content_pass": null,
+          "detail": {
+            "chars": 202,
+            "expect_refusal": false,
+            "not_empty": true,
+            "refusal_ok": true,
+            "refusal_phrase_present": false
+          },
+          "format_pass": null,
+          "human_filled": false,
+          "human_pending": [
+            "facts_correct",
+            "no_unsupported_claim",
+            "citation_supports"
+          ],
+          "human_required": true,
+          "mechanized_pass": true,
+          "overall_pass": false,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "group": "high",
+      "test_id": "D07",
+      "question": {
+        "test_id": "D07",
+        "task_type_gold": "qa_grounded",
+        "question": "根据资料，MRR 这个指标变大通常说明什么？",
+        "materials": [
+          "MRR 是第一个相关结果出现位置倒数的平均值。相关结果排得越靠前，MRR 越高；如果某题前若干条都拿不到相关结果，该题的倒数记为零。"
+        ],
+        "constraints": {
+          "material_count": 1
+        },
+        "expect_refusal": false,
+        "notes": "无比较/推理线索词：预期默认档 low"
+      },
+      "answer": "根据资料，MRR 变大通常说明：**相关结果排得越靠前**。\n\n具体来说，资料指出 MRR 是“第一个相关结果出现位置倒数的平均值”，因此：\n\n- MRR 越高（变大），说明第一个相关结果在结果列表中出现的位置越靠前（排名越靠前）；\n- 反之，如果某题前若干条结果里都找不到相关结果，该题的倒数记为零，会拉低 MRR。\n\n也就是说，MRR 变大意味着系统把相关结果排到了更靠前的位置，检索/排序效果更好。",
+      "answer_sha256": "9118a5e9a0ce2acce823535c9f7549b499bb10868c158e5a86c0b092dee86a97",
+      "recorded_human_items_pass": true,
+      "arithmetic_and": true,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.014584,
+            "latency_ms": 3950,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 490,
+              "prompt_tokens": 108
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 490,
+            "completion_tokens_details": {
+              "reasoning_tokens": 365
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 108,
+            "prompt_tokens": 108,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 598
+          }
+        },
+        "known_cost_cny": 0.014584,
+        "total_cost_cny": 0.014584,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 3975,
+        "quality": {
+          "content_pass": null,
+          "detail": {
+            "chars": 202,
+            "expect_refusal": false,
+            "not_empty": true,
+            "refusal_ok": true,
+            "refusal_phrase_present": false
+          },
+          "format_pass": null,
+          "human_filled": false,
+          "human_pending": [
+            "facts_correct",
+            "no_unsupported_claim",
+            "citation_supports"
+          ],
+          "human_required": true,
+          "mechanized_pass": true,
+          "overall_pass": false,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "group": "high",
+      "test_id": "D08",
+      "question": {
+        "test_id": "D08",
+        "task_type_gold": "summary",
+        "question": "请概括材料关于检索指标的说明，控制在 300 字以内。",
+        "materials": [
+          "检索评测常用三个指标。Hit@K 看规定的证据片段有没有进入前 K 条结果，它的分母是计分题数。MRR 看第一个相关结果排在第几位，位置越靠前分数越高。两个指标都只描述检索结果的位置，不判断最终回答是否正确，因此不能当作答案准确率使用。"
+        ],
+        "constraints": {
+          "material_count": 1,
+          "max_chars": 300
+        },
+        "criteria": {
+          "max_chars": 300,
+          "coverage_keywords": [
+            "Hit@K",
+            "MRR",
+            "分母"
+          ],
+          "forbidden_keywords": [
+            "答案准确率提高"
+          ]
+        },
+        "notes": "单材料摘要：预期默认档 low；人工核 no_added_content_by_human"
+      },
+      "answer": "材料指出，检索评测常用三个指标，但具体说明了其中两个：\n\n1. **Hit@K**：检查规定的证据片段是否进入前 K 条检索结果，其分母为计分题数。\n2. **MRR**：关注第一个相关结果在检索结果中的排名，位置越靠前得分越高。\n\n材料强调，这两个指标都只描述检索结果的位置情况，并不判断最终回答是否正确，因此不能当作答案准确率使用。",
+      "answer_sha256": "4916b816ec837ac7ffd234a4eaae59dd3dfae6f1e4189462576272fd4723f7da",
+      "recorded_human_items_pass": true,
+      "arithmetic_and": true,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.01152,
+            "latency_ms": 5757,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 372,
+              "prompt_tokens": 138
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 372,
+            "completion_tokens_details": {
+              "reasoning_tokens": 276
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 138,
+            "prompt_tokens": 138,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 510
+          }
+        },
+        "known_cost_cny": 0.01152,
+        "total_cost_cny": 0.01152,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 5782,
+        "quality": {
+          "content_pass": null,
+          "detail": {
+            "chars": 168,
+            "coverage_hit": [
+              "Hit@K",
+              "MRR",
+              "分母"
+            ],
+            "coverage_missing": [],
+            "coverage_pass": true,
+            "coverage_ratio": 1.0,
+            "forbidden_hit": [],
+            "length_pass": true,
+            "max_chars": 300
+          },
+          "format_pass": null,
+          "human_filled": false,
+          "human_pending": [
+            "no_added_content_by_human"
+          ],
+          "human_required": true,
+          "mechanized_pass": true,
+          "overall_pass": false,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "group": "high",
+      "test_id": "D09",
+      "question": {
+        "test_id": "D09",
+        "task_type_gold": "summary",
+        "question": "请总结这三段材料共同说明的问题。",
+        "materials": [
+          "第一段：检索结果是否命中，取决于分词与分词权重的设置。",
+          "第二段：命中之后能否答对，取决于证据是否被正确组织进上下文。",
+          "第三段：这两件事需要分开验证，不能用一个指标代替另一个。"
+        ],
+        "constraints": {
+          "material_count": 3,
+          "max_chars": 200
+        },
+        "criteria": {
+          "max_chars": 200,
+          "coverage_keywords": [
+            "检索",
+            "生成",
+            "验证"
+          ],
+          "forbidden_keywords": [
+            "准确率提升"
+          ]
+        },
+        "notes": "三段材料：命中 R2，预期走 high"
+      },
+      "answer": "## 三段材料共同说明的问题\n\n这三段材料共同说明了：**在检索问答（RAG类）系统中，“检索命中”与“回答正确”是两个相互独立、各有决定因素的环节，必须分别验证，不能混为一谈。**\n\n具体可拆解为三层递进关系：\n\n1. **命中环节**（材料1）：检索能否命中，由分词与分词权重的设置决定——这是检索侧的问题。\n\n2. **答对环节**（材料2）：即使命中了，能否答对还取决于证据是否被正确组织进上下文——这是生成/组织侧的问题。\n\n3. **验证方法**（材料3）：由于两个环节的决定因素不同，二者需要**分开验证**，各自的指标各司其职，不能用一个指标（如只看命中率，或只看最终答案正确率）来代替另一个。\n\n**核心结论**：命中 ≠ 答对。检索命中只是答对的前提，而非充分条件；评估这类系统时，必须对检索质量和答案质量分别建立指标、分别归因，否则无法定位问题究竟出在检索侧还是组织侧。",
+      "answer_sha256": "d952372ab460fe3b81f7b7abe4e22510fd1a44bcf29243156545d67516275ad6",
+      "recorded_human_items_pass": true,
+      "arithmetic_and": false,
+      "request_observation": {
+        "attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0168,
+            "latency_ms": 9223,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_v1",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 566,
+              "prompt_tokens": 119
+            },
+            "usage_known": true
+          }
+        ],
+        "usage_meta": {
+          "cached_source": "prompt_tokens_details.cached_tokens",
+          "cached_tokens_used": 0,
+          "notes": [],
+          "raw_usage": {
+            "completion_tokens": 566,
+            "completion_tokens_details": {
+              "reasoning_tokens": 330
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 119,
+            "prompt_tokens": 119,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "total_tokens": 685
+          }
+        },
+        "known_cost_cny": 0.0168,
+        "total_cost_cny": 0.0168,
+        "unknown_attempt_count": 0,
+        "latency_ms_total": 9248,
+        "quality": {
+          "content_pass": null,
+          "detail": {
+            "chars": 396,
+            "coverage_hit": [
+              "检索",
+              "生成",
+              "验证"
+            ],
+            "coverage_missing": [],
+            "coverage_pass": true,
+            "coverage_ratio": 1.0,
+            "forbidden_hit": [],
+            "length_pass": false,
+            "max_chars": 200
+          },
+          "format_pass": null,
+          "human_filled": false,
+          "human_pending": [
+            "no_added_content_by_human"
+          ],
+          "human_required": true,
+          "mechanized_pass": false,
+          "overall_pass": false,
+          "reason": "超长（396 > 200）"
+        }
+      }
+    }
+  ]
+}

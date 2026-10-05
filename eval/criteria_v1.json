@@ -1,0 +1,24 @@
+{
+  "version": "criteria_v1",
+  "frozen_at": "2026-09-26",
+  "note": "判据冻结文件：必须在跑实验之前定稿。修改判据必须升版本号，并重跑三组全部题目；不允许只跑一半再换判据。",
+  "coverage_threshold": 0.6,
+  "refusal_phrase": "资料中未找到相关依据",
+  "overall_pass_rule": {
+    "extract": "format_pass（JSON 可解析 + 必填字段齐全）AND content_pass（与 answer_key 逐字段一致）；无人工项",
+    "summary": "mechanized_pass（长度不超上限 AND 覆盖关键词比例 >= coverage_threshold AND 无禁止词）AND 人工项 no_added_content_by_human",
+    "qa_grounded": "mechanized_pass（非空 AND 期望拒答时含拒答短语）AND 人工三项 facts_correct / no_unsupported_claim / citation_supports",
+    "unknown": "无法判定：只记 not_empty 并标人工（task_type_unrecognized）"
+  },
+  "human_items": {
+    "facts_correct": "关键事实是否与资料一致",
+    "no_unsupported_claim": "是否出现资料不支持的说法",
+    "citation_supports": "给出的依据或引用是否支持结论",
+    "no_added_content_by_human": "摘要是否新增了材料中没有的内容"
+  },
+  "notes": [
+    "检索命中（Hit@K）不能证明答案正确，本判据不使用命中率。",
+    "人工完成前 overall_pass 一律为 false（记未达标），不得用机检结果代替人工结论。",
+    "题目的判据参数（answer_key / coverage_keywords / max_chars / expect_refusal）随题集一起冻结。"
+  ]
+}

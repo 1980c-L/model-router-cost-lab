@@ -1,0 +1,4187 @@
+{
+  "scope": "v3-02: 71 attempts, 70 answers, 19 unexecuted; publicly selected records, not provider billing",
+  "original_batch_manifest_sha256": "328af0109eebce7b371fe0db1491a79b930754ceabaef4b7e79cfad868d55476",
+  "original_reconciliation_sha256": "dfbbc105457cd2a6649d24bf8f7dad2e76af92147278687e60857883ac0324cf",
+  "items": [
+    {
+      "answer_bytes": 96,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": false,
+      "known_cost_cny": 0.0003336,
+      "latency_ms_total": 1808,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T01",
+      "total_cost_cny": 0.0003336,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T01/answers/T01.txt",
+      "answer_sha256": "c1862aa8e71f59d74833b9206d73240b29c6298da36234fbbdf8a821aa3f6530",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003336,
+            "latency_ms": 1774,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 43,
+              "prompt_tokens": 212
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 43,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 212,
+          "prompt_tokens": 212,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 255
+        }
+      }
+    },
+    {
+      "answer_bytes": 95,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": false,
+      "known_cost_cny": 0.00027,
+      "latency_ms_total": 1746,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T02",
+      "total_cost_cny": 0.00027,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T02/answers/T02.txt",
+      "answer_sha256": "e7982c69386b55e87b9043138701536ce3384633c77f4e9f7a48d33bd71c911a",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.00027,
+            "latency_ms": 1600,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 34,
+              "prompt_tokens": 178
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 34,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 178,
+          "prompt_tokens": 178,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 212
+        }
+      }
+    },
+    {
+      "answer_bytes": 80,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": false,
+      "known_cost_cny": 0.0002424,
+      "latency_ms_total": 8065,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T03",
+      "total_cost_cny": 0.0002424,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T03/answers/T03.txt",
+      "answer_sha256": "bb6ac2e4e0b2b36ad8a073359b9f53549c093367e317a7a70aeb0a74c24b26a1",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0002424,
+            "latency_ms": 8040,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 27,
+              "prompt_tokens": 188
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 27,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 188,
+          "prompt_tokens": 188,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 215
+        }
+      }
+    },
+    {
+      "answer_bytes": 87,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": false,
+      "known_cost_cny": 0.0002868,
+      "latency_ms_total": 6123,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T04",
+      "total_cost_cny": 0.0002868,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T04/answers/T04.txt",
+      "answer_sha256": "dcf798ec313b078dc850028b375ca48b476fa03f2b47a794c4cf572a53892bb2",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0002868,
+            "latency_ms": 6095,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 35,
+              "prompt_tokens": 198
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 35,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 198,
+          "prompt_tokens": 198,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 233
+        }
+      }
+    },
+    {
+      "answer_bytes": 116,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": false,
+      "known_cost_cny": 0.000339,
+      "latency_ms_total": 1849,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T05",
+      "total_cost_cny": 0.000339,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T05/answers/T05.txt",
+      "answer_sha256": "a42e9fafc46b88ceb71b4ed4fd08a880eda535de92a25164501bf77960ee3c8b",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.000339,
+            "latency_ms": 1765,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 41,
+              "prompt_tokens": 237
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 41,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 237,
+          "prompt_tokens": 237,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 278
+        }
+      }
+    },
+    {
+      "answer_bytes": 158,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": false,
+      "known_cost_cny": 0.0004722,
+      "latency_ms_total": 6940,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T06",
+      "total_cost_cny": 0.0004722,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T06/answers/T06.txt",
+      "answer_sha256": "b112b03d3f0479b51225bfb2e845fcc688a5cd595743e17665784c6da169603c",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0004722,
+            "latency_ms": 6819,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 62,
+              "prompt_tokens": 291
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 62,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 291,
+          "prompt_tokens": 291,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 353
+        }
+      }
+    },
+    {
+      "answer_bytes": 150,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": false,
+      "known_cost_cny": 0.0003072,
+      "latency_ms_total": 2022,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T07",
+      "total_cost_cny": 0.0003072,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T07/answers/T07.txt",
+      "answer_sha256": "52e78fa1076fd36f3b3bcee5c099af95af2fbc9cd5f1d2c7a172f8f7ca689650",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003072,
+            "latency_ms": 1924,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 39,
+              "prompt_tokens": 200
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 39,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 200,
+          "prompt_tokens": 200,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 239
+        }
+      }
+    },
+    {
+      "answer_bytes": 95,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": false,
+      "known_cost_cny": 0.0002472,
+      "latency_ms_total": 1589,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T08",
+      "total_cost_cny": 0.0002472,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T08/answers/T08.txt",
+      "answer_sha256": "fe681409063a019b91cfd5ad28185dc82ec00e25bd3cfdeeda6535fd5f692507",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0002472,
+            "latency_ms": 1482,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 31,
+              "prompt_tokens": 164
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 31,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 164,
+          "prompt_tokens": 164,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 195
+        }
+      }
+    },
+    {
+      "answer_bytes": 164,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": false,
+      "known_cost_cny": 0.0004878,
+      "latency_ms_total": 2521,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T09",
+      "total_cost_cny": 0.0004878,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T09/answers/T09.txt",
+      "answer_sha256": "c547a8e307d45af593af5bcf58ebf0009a35f9989bae36f9b2188c371829112d",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0004878,
+            "latency_ms": 2443,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 67,
+              "prompt_tokens": 277
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 67,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 277,
+          "prompt_tokens": 277,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 344
+        }
+      }
+    },
+    {
+      "answer_bytes": 122,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": false,
+      "known_cost_cny": 0.000309,
+      "latency_ms_total": 112237,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T10",
+      "total_cost_cny": 0.000309,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T10/answers/T10.txt",
+      "answer_sha256": "581a2ea869df1061dc858f24e40babd815cea9cc896f595effde7e6147c9fdfc",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.000309,
+            "latency_ms": 112158,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 34,
+              "prompt_tokens": 243
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 34,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 243,
+          "prompt_tokens": 243,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 277
+        }
+      }
+    },
+    {
+      "answer_bytes": 229,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.000342,
+      "latency_ms_total": 3388,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T11",
+      "total_cost_cny": 0.000342,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T11/answers/T11.txt",
+      "answer_sha256": "85f7978e9f31b9f8c5f1717ba50104d5b65d8c9a011506e839bda6c2c97ad206",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.000342,
+            "latency_ms": 3255,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 55,
+              "prompt_tokens": 130
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 55,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 130,
+          "prompt_tokens": 130,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 185
+        }
+      }
+    },
+    {
+      "answer_bytes": 258,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.0003228,
+      "latency_ms_total": 10170,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T12",
+      "total_cost_cny": 0.0003228,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T12/answers/T12.txt",
+      "answer_sha256": "13b226837e83c63f26f1ff5276557c3d6056bc1bebd098002b3f874af4968201",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003228,
+            "latency_ms": 10032,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 53,
+              "prompt_tokens": 114
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 53,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 114,
+          "prompt_tokens": 114,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 167
+        }
+      }
+    },
+    {
+      "answer_bytes": 94,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.0001656,
+      "latency_ms_total": 1535,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T13",
+      "total_cost_cny": 0.0001656,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T13/answers/T13.txt",
+      "answer_sha256": "023b1965e6f0f313c2dedfcb133601431705858412c3d3f759903221b850be5c",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0001656,
+            "latency_ms": 1196,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 19,
+              "prompt_tokens": 124
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 19,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 124,
+          "prompt_tokens": 124,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 143
+        }
+      }
+    },
+    {
+      "answer_bytes": 212,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.0003492,
+      "latency_ms_total": 2893,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T14",
+      "total_cost_cny": 0.0003492,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T14/answers/T14.txt",
+      "answer_sha256": "6b1426606225dd35f231fe64704e4ab8e72d3e8a5db2e4f15b48a051e97f7dd1",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003492,
+            "latency_ms": 2728,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 59,
+              "prompt_tokens": 110
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 59,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 110,
+          "prompt_tokens": 110,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 169
+        }
+      }
+    },
+    {
+      "answer_bytes": 425,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.00072,
+      "latency_ms_total": 6181,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T15",
+      "total_cost_cny": 0.00072,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T15/answers/T15.txt",
+      "answer_sha256": "b4d745220f31564363038b0c67a0f94d4bca4c00971168fefc9c886cbb9f4f11",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.00072,
+            "latency_ms": 6074,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 131,
+              "prompt_tokens": 152
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 131,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 152,
+          "prompt_tokens": 152,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 283
+        }
+      }
+    },
+    {
+      "answer_bytes": 346,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.0004836,
+      "latency_ms_total": 2289,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T16",
+      "total_cost_cny": 0.0004836,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T16/answers/T16.txt",
+      "answer_sha256": "f5ef2562a94289a685164470f3bd6a36fc1c4838ab247ffd8bdcf6570b8a6ada",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0004836,
+            "latency_ms": 2237,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 81,
+              "prompt_tokens": 158
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 81,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 158,
+          "prompt_tokens": 158,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 239
+        }
+      }
+    },
+    {
+      "answer_bytes": 365,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.00042,
+      "latency_ms_total": 2974,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T17",
+      "total_cost_cny": 0.00042,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T17/answers/T17.txt",
+      "answer_sha256": "b7b0757f0c912915eb92528e151eeea9c6266e5ac3c524147a067be0fd1412e0",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.00042,
+            "latency_ms": 2834,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 72,
+              "prompt_tokens": 124
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 72,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 124,
+          "prompt_tokens": 124,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 196
+        }
+      }
+    },
+    {
+      "answer_bytes": 297,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.0004464,
+      "latency_ms_total": 2728,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T18",
+      "total_cost_cny": 0.0004464,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T18/answers/T18.txt",
+      "answer_sha256": "c973d78c5c37356162973c832db9d96095adfac4a30a770d9f0055eafe3ef50b",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0004464,
+            "latency_ms": 2602,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 73,
+              "prompt_tokens": 160
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 73,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 160,
+          "prompt_tokens": 160,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 233
+        }
+      }
+    },
+    {
+      "answer_bytes": 33,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.0001008,
+      "latency_ms_total": 1207,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T19",
+      "total_cost_cny": 0.0001008,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T19/answers/T19.txt",
+      "answer_sha256": "0ac535679b1e4c5c9a9d14957d9ded32558492aba45040a47d248f4f487d2e84",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0001008,
+            "latency_ms": 1044,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 7,
+              "prompt_tokens": 112
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 7,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 112,
+          "prompt_tokens": 112,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 119
+        }
+      }
+    },
+    {
+      "answer_bytes": 33,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.0001038,
+      "latency_ms_total": 972,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T20",
+      "total_cost_cny": 0.0001038,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T20/answers/T20.txt",
+      "answer_sha256": "0ac535679b1e4c5c9a9d14957d9ded32558492aba45040a47d248f4f487d2e84",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0001038,
+            "latency_ms": 873,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 7,
+              "prompt_tokens": 117
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 7,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 117,
+          "prompt_tokens": 117,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 124
+        }
+      }
+    },
+    {
+      "answer_bytes": 303,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.0004692,
+      "latency_ms_total": 2556,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "覆盖面不足（0.25 < 0.6）",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "summary",
+      "test_id": "T21",
+      "total_cost_cny": 0.0004692,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T21/answers/T21.txt",
+      "answer_sha256": "c09e57c3769ecfeaafbe46a991963d59a12b3c11b41d9f8c9c219c53e399c299",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0004692,
+            "latency_ms": 2446,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 74,
+              "prompt_tokens": 190
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 74,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 190,
+          "prompt_tokens": 190,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 264
+        }
+      }
+    },
+    {
+      "answer_bytes": 270,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.000378,
+      "latency_ms_total": 1868,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "覆盖面不足（0.25 < 0.6）",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "summary",
+      "test_id": "T22",
+      "total_cost_cny": 0.000378,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T22/answers/T22.txt",
+      "answer_sha256": "71d9b5e7fe03b934aa853efd71310c225fa9ec6b009f79a4ca7ae6990dd06fb4",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.000378,
+            "latency_ms": 1756,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 59,
+              "prompt_tokens": 158
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 59,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 158,
+          "prompt_tokens": 158,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 217
+        }
+      }
+    },
+    {
+      "answer_bytes": 232,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "low",
+      "human_required": true,
+      "known_cost_cny": 0.0003468,
+      "latency_ms_total": 1928,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "覆盖面不足（0.5 < 0.6）",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "summary",
+      "test_id": "T23",
+      "total_cost_cny": 0.0003468,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/low/T23/answers/T23.txt",
+      "answer_sha256": "2b6d2ad9e7ec1f52b2e153a2b41d8b27caf6dfed6438a1bf9fb0a0d73ef004ef",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003468,
+            "latency_ms": 1795,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 52,
+              "prompt_tokens": 162
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 52,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 162,
+          "prompt_tokens": 162,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 214
+        }
+      }
+    },
+    {
+      "answer_bytes": 0,
+      "content_pass": null,
+      "failure_kind": "platform",
+      "group": "low",
+      "human_required": null,
+      "known_cost_cny": 0,
+      "latency_ms_total": 111596,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "HTTP 503",
+      "overall_pass": false,
+      "reason": "运行失败：platform",
+      "run_status": "failed",
+      "slot": "low",
+      "task_type_gold": "summary",
+      "test_id": "T24",
+      "total_cost_cny": null,
+      "type_mismatched": null,
+      "usage_known": false,
+      "answer_ref": null,
+      "answer_sha256": null,
+      "failed_output_placeholder_ref": "fixtures/m2-v3-02/raw/low/T24/answers/T24.txt",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": null,
+            "latency_ms": 111596,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "error",
+            "unit_price_version": "prices_public_20260928",
+            "usage": null,
+            "usage_known": false
+          }
+        ],
+        "raw_usage": null
+      }
+    },
+    {
+      "answer_bytes": 95,
+      "content_pass": false,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": false,
+      "known_cost_cny": 0.022284,
+      "latency_ms_total": 12211,
+      "mechanized_pass": false,
+      "mismatched": [
+        {
+          "expected": "3 号库房",
+          "field": "warehouse_id",
+          "got": "3号库房"
+        }
+      ],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "字段值不一致：warehouse_id",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T01",
+      "total_cost_cny": 0.022284,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T01/answers/T01.txt",
+      "answer_sha256": "bdf6ad6ad450fd8d182f7af0ab91872da054b851a4d98404aa6df416444ae36e",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.022284,
+            "latency_ms": 12186,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 739,
+              "prompt_tokens": 199
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 739,
+          "completion_tokens_details": {
+            "reasoning_tokens": 702
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 199,
+          "prompt_tokens": 199,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 938
+        }
+      }
+    },
+    {
+      "answer_bytes": 95,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": false,
+      "known_cost_cny": 0.007268,
+      "latency_ms_total": 3731,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T02",
+      "total_cost_cny": 0.007268,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T02/answers/T02.txt",
+      "answer_sha256": "e7982c69386b55e87b9043138701536ce3384633c77f4e9f7a48d33bd71c911a",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.007268,
+            "latency_ms": 3707,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 211,
+              "prompt_tokens": 170
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 211,
+          "completion_tokens_details": {
+            "reasoning_tokens": 179
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 170,
+          "prompt_tokens": 170,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 381
+        }
+      }
+    },
+    {
+      "answer_bytes": 87,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": false,
+      "known_cost_cny": 0.0049,
+      "latency_ms_total": 2800,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T03",
+      "total_cost_cny": 0.0049,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T03/answers/T03.txt",
+      "answer_sha256": "210825f3b677307bad394001e5dc5a2b85f59254f57147432146361dcf654c29",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0049,
+            "latency_ms": 2777,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 125,
+              "prompt_tokens": 175
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 125,
+          "completion_tokens_details": {
+            "reasoning_tokens": 94
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 175,
+          "prompt_tokens": 175,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 300
+        }
+      }
+    },
+    {
+      "answer_bytes": 94,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": false,
+      "known_cost_cny": 0.004692,
+      "latency_ms_total": 2591,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T04",
+      "total_cost_cny": 0.004692,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T04/answers/T04.txt",
+      "answer_sha256": "f9e099f87d5c39ac0f4b3e7d07da1a57d444defdf18d7f71a450947322910451",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.004692,
+            "latency_ms": 2490,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 113,
+              "prompt_tokens": 191
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 113,
+          "completion_tokens_details": {
+            "reasoning_tokens": 75
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 191,
+          "prompt_tokens": 191,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 304
+        }
+      }
+    },
+    {
+      "answer_bytes": 116,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": false,
+      "known_cost_cny": 0.005824,
+      "latency_ms_total": 3187,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T05",
+      "total_cost_cny": 0.005824,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T05/answers/T05.txt",
+      "answer_sha256": "a42e9fafc46b88ceb71b4ed4fd08a880eda535de92a25164501bf77960ee3c8b",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.005824,
+            "latency_ms": 3097,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 146,
+              "prompt_tokens": 217
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 146,
+          "completion_tokens_details": {
+            "reasoning_tokens": 111
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 217,
+          "prompt_tokens": 217,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 363
+        }
+      }
+    },
+    {
+      "answer_bytes": 158,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": false,
+      "known_cost_cny": 0.008156,
+      "latency_ms_total": 2837,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T06",
+      "total_cost_cny": 0.008156,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T06/answers/T06.txt",
+      "answer_sha256": "b112b03d3f0479b51225bfb2e845fcc688a5cd595743e17665784c6da169603c",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.008156,
+            "latency_ms": 2705,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 219,
+              "prompt_tokens": 253
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 219,
+          "completion_tokens_details": {
+            "reasoning_tokens": 167
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 253,
+          "prompt_tokens": 253,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 472
+        }
+      }
+    },
+    {
+      "answer_bytes": 150,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": false,
+      "known_cost_cny": 0.006004,
+      "latency_ms_total": 3343,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T07",
+      "total_cost_cny": 0.006004,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T07/answers/T07.txt",
+      "answer_sha256": "52e78fa1076fd36f3b3bcee5c099af95af2fbc9cd5f1d2c7a172f8f7ca689650",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.006004,
+            "latency_ms": 3249,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 159,
+              "prompt_tokens": 194
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 159,
+          "completion_tokens_details": {
+            "reasoning_tokens": 121
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 194,
+          "prompt_tokens": 194,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 353
+        }
+      }
+    },
+    {
+      "answer_bytes": 88,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": false,
+      "known_cost_cny": 0.004772,
+      "latency_ms_total": 2908,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T08",
+      "total_cost_cny": 0.004772,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T08/answers/T08.txt",
+      "answer_sha256": "0360633c533596a6b9c5446dac608f2dc64d95fa19a8cecb357dedef24a06a28",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.004772,
+            "latency_ms": 2813,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 123,
+              "prompt_tokens": 166
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 123,
+          "completion_tokens_details": {
+            "reasoning_tokens": 98
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 166,
+          "prompt_tokens": 166,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 289
+        }
+      }
+    },
+    {
+      "answer_bytes": 143,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": false,
+      "known_cost_cny": 0.068648,
+      "latency_ms_total": 25831,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T09",
+      "total_cost_cny": 0.068648,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T09/answers/T09.txt",
+      "answer_sha256": "6ef1a96f82fcc5278b7ab2802e6a25d6844f94c33d7f397bebf5c15bafa988cb",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.068648,
+            "latency_ms": 25752,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 2378,
+              "prompt_tokens": 258
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 2378,
+          "completion_tokens_details": {
+            "reasoning_tokens": 2338
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 258,
+          "prompt_tokens": 258,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2636
+        }
+      }
+    },
+    {
+      "answer_bytes": 131,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": false,
+      "known_cost_cny": 0.009208,
+      "latency_ms_total": 4899,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T10",
+      "total_cost_cny": 0.009208,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T10/answers/T10.txt",
+      "answer_sha256": "5d93b0c15497ec5c1b4a324d0702a9d7c54ee77489f8b70471a137a723b82ad9",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.009208,
+            "latency_ms": 4783,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 264,
+              "prompt_tokens": 227
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 264,
+          "completion_tokens_details": {
+            "reasoning_tokens": 220
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 227,
+          "prompt_tokens": 227,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 491
+        }
+      }
+    },
+    {
+      "answer_bytes": 268,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.009952,
+      "latency_ms_total": 5961,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T11",
+      "total_cost_cny": 0.009952,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T11/answers/T11.txt",
+      "answer_sha256": "f4d662f03279be2c41de738c9078f06cb45286076bfa79531281b2757219d793",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.009952,
+            "latency_ms": 5850,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 322,
+              "prompt_tokens": 117
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 322,
+          "completion_tokens_details": {
+            "reasoning_tokens": 262
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 117,
+          "prompt_tokens": 117,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 439
+        }
+      }
+    },
+    {
+      "answer_bytes": 461,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.009812,
+      "latency_ms_total": 4098,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T12",
+      "total_cost_cny": 0.009812,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T12/answers/T12.txt",
+      "answer_sha256": "96407f4f3d69d1df77a97f8067dc48be59bdc75b97c9827aca8af2c3b9311511",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.009812,
+            "latency_ms": 3938,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 319,
+              "prompt_tokens": 110
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 319,
+          "completion_tokens_details": {
+            "reasoning_tokens": 209
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 110,
+          "prompt_tokens": 110,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 429
+        }
+      }
+    },
+    {
+      "answer_bytes": 216,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.008172,
+      "latency_ms_total": 4881,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T13",
+      "total_cost_cny": 0.008172,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T13/answers/T13.txt",
+      "answer_sha256": "64ab94b0ae117745ed308eebdc715e20f6b72e8b932525742f76c986f294c007",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.008172,
+            "latency_ms": 4517,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 259,
+              "prompt_tokens": 115
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 259,
+          "completion_tokens_details": {
+            "reasoning_tokens": 207
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 115,
+          "prompt_tokens": 115,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 374
+        }
+      }
+    },
+    {
+      "answer_bytes": 333,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.010936,
+      "latency_ms_total": 7931,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T14",
+      "total_cost_cny": 0.010936,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T14/answers/T14.txt",
+      "answer_sha256": "7ae3d912922d063de0776245357c79b402a666016e8a4f7f6466d5333389f7dd",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.010936,
+            "latency_ms": 7799,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 360,
+              "prompt_tokens": 107
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 360,
+          "completion_tokens_details": {
+            "reasoning_tokens": 274
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 107,
+          "prompt_tokens": 107,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 467
+        }
+      }
+    },
+    {
+      "answer_bytes": 1070,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.031816,
+      "latency_ms_total": 15762,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T15",
+      "total_cost_cny": 0.031816,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T15/answers/T15.txt",
+      "answer_sha256": "d7a0352a544e966fe1979a1cfa83db556595355fa2c587472c38b7d68a96450b",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.031816,
+            "latency_ms": 15708,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 1096,
+              "prompt_tokens": 141
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 1096,
+          "completion_tokens_details": {
+            "reasoning_tokens": 818
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 141,
+          "prompt_tokens": 141,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 1237
+        }
+      }
+    },
+    {
+      "answer_bytes": 378,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.00938,
+      "latency_ms_total": 5008,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T16",
+      "total_cost_cny": 0.00938,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T16/answers/T16.txt",
+      "answer_sha256": "930b393bc4fffaaa986e134607bc9c108dc520570b1f9de74486e18785b377a0",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.00938,
+            "latency_ms": 4974,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 293,
+              "prompt_tokens": 147
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 293,
+          "completion_tokens_details": {
+            "reasoning_tokens": 210
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 147,
+          "prompt_tokens": 147,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 440
+        }
+      }
+    },
+    {
+      "answer_bytes": 967,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.014188,
+      "latency_ms_total": 8357,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T17",
+      "total_cost_cny": 0.014188,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T17/answers/T17.txt",
+      "answer_sha256": "b713ed139bfde6c02fa03b8ca51149a6e82839ed71912aa836127bac79d8a97a",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.014188,
+            "latency_ms": 8217,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 473,
+              "prompt_tokens": 118
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 473,
+          "completion_tokens_details": {
+            "reasoning_tokens": 263
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 118,
+          "prompt_tokens": 118,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 591
+        }
+      }
+    },
+    {
+      "answer_bytes": 467,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.009616,
+      "latency_ms_total": 3905,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T18",
+      "total_cost_cny": 0.009616,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T18/answers/T18.txt",
+      "answer_sha256": "d3a5ece4b1f03fa7d69382eefe5f25234c082eb2a5deca79c1591167947a62ff",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.009616,
+            "latency_ms": 3775,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 302,
+              "prompt_tokens": 145
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 302,
+          "completion_tokens_details": {
+            "reasoning_tokens": 193
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 145,
+          "prompt_tokens": 145,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 447
+        }
+      }
+    },
+    {
+      "answer_bytes": 395,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.006992,
+      "latency_ms_total": 3314,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "期望拒答但未出现拒答短语",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T19",
+      "total_cost_cny": 0.006992,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T19/answers/T19.txt",
+      "answer_sha256": "f3bb1696466ae9c1290d7d69cd402f44dba79850d54a23717dfc0b006bba8356",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.006992,
+            "latency_ms": 3106,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 220,
+              "prompt_tokens": 104
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 220,
+          "completion_tokens_details": {
+            "reasoning_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 104,
+          "prompt_tokens": 104,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 324
+        }
+      }
+    },
+    {
+      "answer_bytes": 193,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.008,
+      "latency_ms_total": 4690,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T20",
+      "total_cost_cny": 0.008,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T20/answers/T20.txt",
+      "answer_sha256": "ebf6c56b240977694c6afdf1b8b460e3ade66fc7dc5886fe1503cdbb76d0658b",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.008,
+            "latency_ms": 4592,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 254,
+              "prompt_tokens": 111
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 254,
+          "completion_tokens_details": {
+            "reasoning_tokens": 210
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 111,
+          "prompt_tokens": 111,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 365
+        }
+      }
+    },
+    {
+      "answer_bytes": 309,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.026884,
+      "latency_ms_total": 8728,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "覆盖面不足（0.25 < 0.6）",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "summary",
+      "test_id": "T21",
+      "total_cost_cny": 0.026884,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T21/answers/T21.txt",
+      "answer_sha256": "64df9b58615a6fedb835d0da044daff2f69097222e22941f448f650c78f9b4a4",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.026884,
+            "latency_ms": 8628,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 911,
+              "prompt_tokens": 172
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 911,
+          "completion_tokens_details": {
+            "reasoning_tokens": 845
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 172,
+          "prompt_tokens": 172,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 1083
+        }
+      }
+    },
+    {
+      "answer_bytes": 309,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.035036,
+      "latency_ms_total": 18226,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "覆盖面不足（0.5 < 0.6）",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "summary",
+      "test_id": "T22",
+      "total_cost_cny": 0.035036,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T22/answers/T22.txt",
+      "answer_sha256": "5ae4597a3c7bcc77ff5155c2a218a3e9a0454d277cb92f3fe2cd7bbad2c07352",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.035036,
+            "latency_ms": 17900,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 1207,
+              "prompt_tokens": 155
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 1207,
+          "completion_tokens_details": {
+            "reasoning_tokens": 1141
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 155,
+          "prompt_tokens": 155,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 1362
+        }
+      }
+    },
+    {
+      "answer_bytes": 279,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "high",
+      "human_required": true,
+      "known_cost_cny": 0.015884,
+      "latency_ms_total": 9093,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "summary",
+      "test_id": "T23",
+      "total_cost_cny": 0.015884,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/high/T23/answers/T23.txt",
+      "answer_sha256": "82a93851bc8bc72cfd976fb89aae701eef731d9537fb2fcc3ea2d3d428703d0e",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.015884,
+            "latency_ms": 8944,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 521,
+              "prompt_tokens": 162
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 521,
+          "completion_tokens_details": {
+            "reasoning_tokens": 454
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 162,
+          "prompt_tokens": 162,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 683
+        }
+      }
+    },
+    {
+      "answer_bytes": 96,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": false,
+      "known_cost_cny": 0.0003336,
+      "latency_ms_total": 31906,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T01",
+      "total_cost_cny": 0.0003336,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T01/answers/T01.txt",
+      "answer_sha256": "c1862aa8e71f59d74833b9206d73240b29c6298da36234fbbdf8a821aa3f6530",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003336,
+            "latency_ms": 31882,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 43,
+              "prompt_tokens": 212
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 43,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 212,
+          "prompt_tokens": 212,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 255
+        }
+      }
+    },
+    {
+      "answer_bytes": 95,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": false,
+      "known_cost_cny": 0.00027,
+      "latency_ms_total": 132613,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T02",
+      "total_cost_cny": 0.00027,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T02/answers/T02.txt",
+      "answer_sha256": "e7982c69386b55e87b9043138701536ce3384633c77f4e9f7a48d33bd71c911a",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.00027,
+            "latency_ms": 132588,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 34,
+              "prompt_tokens": 178
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 34,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 178,
+          "prompt_tokens": 178,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 212
+        }
+      }
+    },
+    {
+      "answer_bytes": 80,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": false,
+      "known_cost_cny": 0.0002424,
+      "latency_ms_total": 1269,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T03",
+      "total_cost_cny": 0.0002424,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T03/answers/T03.txt",
+      "answer_sha256": "bb6ac2e4e0b2b36ad8a073359b9f53549c093367e317a7a70aeb0a74c24b26a1",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0002424,
+            "latency_ms": 1228,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 27,
+              "prompt_tokens": 188
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 27,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 188,
+          "prompt_tokens": 188,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 215
+        }
+      }
+    },
+    {
+      "answer_bytes": 94,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": false,
+      "known_cost_cny": 0.0003204,
+      "latency_ms_total": 4618,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T04",
+      "total_cost_cny": 0.0003204,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T04/answers/T04.txt",
+      "answer_sha256": "f9e099f87d5c39ac0f4b3e7d07da1a57d444defdf18d7f71a450947322910451",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003204,
+            "latency_ms": 4507,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 42,
+              "prompt_tokens": 198
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 42,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 198,
+          "prompt_tokens": 198,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 240
+        }
+      }
+    },
+    {
+      "answer_bytes": 116,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": false,
+      "known_cost_cny": 0.006692,
+      "latency_ms_total": 3607,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T05",
+      "total_cost_cny": 0.006692,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T05/answers/T05.txt",
+      "answer_sha256": "a42e9fafc46b88ceb71b4ed4fd08a880eda535de92a25164501bf77960ee3c8b",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.006692,
+            "latency_ms": 3483,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 177,
+              "prompt_tokens": 217
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 177,
+          "completion_tokens_details": {
+            "reasoning_tokens": 142
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 217,
+          "prompt_tokens": 217,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 394
+        }
+      }
+    },
+    {
+      "answer_bytes": 158,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": false,
+      "known_cost_cny": 0.008156,
+      "latency_ms_total": 4160,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T06",
+      "total_cost_cny": 0.008156,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T06/answers/T06.txt",
+      "answer_sha256": "b112b03d3f0479b51225bfb2e845fcc688a5cd595743e17665784c6da169603c",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.008156,
+            "latency_ms": 4069,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 219,
+              "prompt_tokens": 253
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 219,
+          "completion_tokens_details": {
+            "reasoning_tokens": 167
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 253,
+          "prompt_tokens": 253,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 472
+        }
+      }
+    },
+    {
+      "answer_bytes": 161,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": false,
+      "known_cost_cny": 0.010288,
+      "latency_ms_total": 5428,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T07",
+      "total_cost_cny": 0.010288,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T07/answers/T07.txt",
+      "answer_sha256": "0f99befe4eae3355deb387de7ba0fce1134b331aa098d633b08b89c3662c0a7a",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.010288,
+            "latency_ms": 5349,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 312,
+              "prompt_tokens": 194
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 312,
+          "completion_tokens_details": {
+            "reasoning_tokens": 264
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 194,
+          "prompt_tokens": 194,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 506
+        }
+      }
+    },
+    {
+      "answer_bytes": 95,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": false,
+      "known_cost_cny": 0.0002472,
+      "latency_ms_total": 3469,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "extract",
+      "test_id": "T08",
+      "total_cost_cny": 0.0002472,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T08/answers/T08.txt",
+      "answer_sha256": "fe681409063a019b91cfd5ad28185dc82ec00e25bd3cfdeeda6535fd5f692507",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0002472,
+            "latency_ms": 3348,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 31,
+              "prompt_tokens": 164
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 31,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 164,
+          "prompt_tokens": 164,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 195
+        }
+      }
+    },
+    {
+      "answer_bytes": 143,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": false,
+      "known_cost_cny": 0.012844,
+      "latency_ms_total": 5294,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T09",
+      "total_cost_cny": 0.012844,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T09/answers/T09.txt",
+      "answer_sha256": "6ef1a96f82fcc5278b7ab2802e6a25d6844f94c33d7f397bebf5c15bafa988cb",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.012844,
+            "latency_ms": 5204,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 385,
+              "prompt_tokens": 258
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 385,
+          "completion_tokens_details": {
+            "reasoning_tokens": 345
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 258,
+          "prompt_tokens": 258,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 643
+        }
+      }
+    },
+    {
+      "answer_bytes": 131,
+      "content_pass": true,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": false,
+      "known_cost_cny": 0.009628,
+      "latency_ms_total": 4022,
+      "mechanized_pass": true,
+      "mismatched": [],
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": true,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "extract",
+      "test_id": "T10",
+      "total_cost_cny": 0.009628,
+      "type_mismatched": [],
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T10/answers/T10.txt",
+      "answer_sha256": "5d93b0c15497ec5c1b4a324d0702a9d7c54ee77489f8b70471a137a723b82ad9",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.009628,
+            "latency_ms": 3867,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 279,
+              "prompt_tokens": 227
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 279,
+          "completion_tokens_details": {
+            "reasoning_tokens": 235
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 227,
+          "prompt_tokens": 227,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 506
+        }
+      }
+    },
+    {
+      "answer_bytes": 229,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.000342,
+      "latency_ms_total": 2301,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T11",
+      "total_cost_cny": 0.000342,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T11/answers/T11.txt",
+      "answer_sha256": "85f7978e9f31b9f8c5f1717ba50104d5b65d8c9a011506e839bda6c2c97ad206",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.000342,
+            "latency_ms": 2144,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 55,
+              "prompt_tokens": 130
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 55,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 130,
+          "prompt_tokens": 130,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 185
+        }
+      }
+    },
+    {
+      "answer_bytes": 252,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.000318,
+      "latency_ms_total": 1674,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T12",
+      "total_cost_cny": 0.000318,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T12/answers/T12.txt",
+      "answer_sha256": "d7595926f70bf1842d45ca34c1bdf687ced6c53a4d38bf9503586f7f486b7541",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.000318,
+            "latency_ms": 1531,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 52,
+              "prompt_tokens": 114
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 52,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 114,
+          "prompt_tokens": 114,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 166
+        }
+      }
+    },
+    {
+      "answer_bytes": 182,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.0002952,
+      "latency_ms_total": 3092,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T13",
+      "total_cost_cny": 0.0002952,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T13/answers/T13.txt",
+      "answer_sha256": "cdc9b0c4a2b428c2398e1f59b51ea06005f2953979ddc0e0ced28b350dd49e32",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0002952,
+            "latency_ms": 2988,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 46,
+              "prompt_tokens": 124
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 46,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 124,
+          "prompt_tokens": 124,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 170
+        }
+      }
+    },
+    {
+      "answer_bytes": 212,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.0003492,
+      "latency_ms_total": 7591,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T14",
+      "total_cost_cny": 0.0003492,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T14/answers/T14.txt",
+      "answer_sha256": "6b1426606225dd35f231fe64704e4ab8e72d3e8a5db2e4f15b48a051e97f7dd1",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003492,
+            "latency_ms": 7477,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 59,
+              "prompt_tokens": 110
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 59,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 110,
+          "prompt_tokens": 110,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 169
+        }
+      }
+    },
+    {
+      "answer_bytes": 889,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.016892,
+      "latency_ms_total": 9330,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T15",
+      "total_cost_cny": 0.016892,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T15/answers/T15.txt",
+      "answer_sha256": "90626460a6b89b69316e9eb910c6e5d22d36786c4377731789503ab8ed41ad33",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.016892,
+            "latency_ms": 9230,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 563,
+              "prompt_tokens": 141
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 563,
+          "completion_tokens_details": {
+            "reasoning_tokens": 322
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 141,
+          "prompt_tokens": 141,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 704
+        }
+      }
+    },
+    {
+      "answer_bytes": 378,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.008612,
+      "latency_ms_total": 5235,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T16",
+      "total_cost_cny": 0.008612,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T16/answers/T16.txt",
+      "answer_sha256": "930b393bc4fffaaa986e134607bc9c108dc520570b1f9de74486e18785b377a0",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.008612,
+            "latency_ms": 5209,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 128,
+              "completion_tokens": 293,
+              "prompt_tokens": 147
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 293,
+          "completion_tokens_details": {
+            "reasoning_tokens": 210
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 19,
+          "prompt_tokens": 147,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "total_tokens": 440
+        }
+      }
+    },
+    {
+      "answer_bytes": 967,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.014188,
+      "latency_ms_total": 8427,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T17",
+      "total_cost_cny": 0.014188,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T17/answers/T17.txt",
+      "answer_sha256": "b713ed139bfde6c02fa03b8ca51149a6e82839ed71912aa836127bac79d8a97a",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.014188,
+            "latency_ms": 8295,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 473,
+              "prompt_tokens": 118
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 473,
+          "completion_tokens_details": {
+            "reasoning_tokens": 263
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 118,
+          "prompt_tokens": 118,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 591
+        }
+      }
+    },
+    {
+      "answer_bytes": 497,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.011492,
+      "latency_ms_total": 6355,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "zai-org/GLM-5.3",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "high",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T18",
+      "total_cost_cny": 0.011492,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T18/answers/T18.txt",
+      "answer_sha256": "d52d5336a34b2c203a28e0fe47212972d2db988a9f2ce4abe1bcd21324c1c5de",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.011492,
+            "latency_ms": 6077,
+            "model": "zai-org/GLM-5.3",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "high",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 369,
+              "prompt_tokens": 145
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 369,
+          "completion_tokens_details": {
+            "reasoning_tokens": 252
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 145,
+          "prompt_tokens": 145,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 514
+        }
+      }
+    },
+    {
+      "answer_bytes": 33,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.0001008,
+      "latency_ms_total": 1176,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T19",
+      "total_cost_cny": 0.0001008,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T19/answers/T19.txt",
+      "answer_sha256": "0ac535679b1e4c5c9a9d14957d9ded32558492aba45040a47d248f4f487d2e84",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0001008,
+            "latency_ms": 972,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 7,
+              "prompt_tokens": 112
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 7,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 112,
+          "prompt_tokens": 112,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 119
+        }
+      }
+    },
+    {
+      "answer_bytes": 33,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.0001038,
+      "latency_ms_total": 1019,
+      "mechanized_pass": true,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "qa_grounded",
+      "test_id": "T20",
+      "total_cost_cny": 0.0001038,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T20/answers/T20.txt",
+      "answer_sha256": "0ac535679b1e4c5c9a9d14957d9ded32558492aba45040a47d248f4f487d2e84",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0001038,
+            "latency_ms": 903,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 7,
+              "prompt_tokens": 117
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 7,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 117,
+          "prompt_tokens": 117,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 124
+        }
+      }
+    },
+    {
+      "answer_bytes": 303,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.0004692,
+      "latency_ms_total": 2711,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "覆盖面不足（0.25 < 0.6）",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "summary",
+      "test_id": "T21",
+      "total_cost_cny": 0.0004692,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T21/answers/T21.txt",
+      "answer_sha256": "c09e57c3769ecfeaafbe46a991963d59a12b3c11b41d9f8c9c219c53e399c299",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0004692,
+            "latency_ms": 2496,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 74,
+              "prompt_tokens": 190
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 74,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 190,
+          "prompt_tokens": 190,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 264
+        }
+      }
+    },
+    {
+      "answer_bytes": 300,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.0003924,
+      "latency_ms_total": 4329,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "覆盖面不足（0.25 < 0.6）",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "summary",
+      "test_id": "T22",
+      "total_cost_cny": 0.0003924,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T22/answers/T22.txt",
+      "answer_sha256": "0cb42c50561e80910be024f9f18ccd030216131d541641b1d51101b5270803b3",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003924,
+            "latency_ms": 4226,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 62,
+              "prompt_tokens": 158
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 62,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 158,
+          "prompt_tokens": 158,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 220
+        }
+      }
+    },
+    {
+      "answer_bytes": 238,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.0003564,
+      "latency_ms_total": 2107,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "覆盖面不足（0.5 < 0.6）",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "summary",
+      "test_id": "T23",
+      "total_cost_cny": 0.0003564,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T23/answers/T23.txt",
+      "answer_sha256": "a1bab07b0621f7ab9847515454f80968850dc0fb32bd007660f9f6bcc4504c6a",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0003564,
+            "latency_ms": 1985,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 54,
+              "prompt_tokens": 162
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 54,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 162,
+          "prompt_tokens": 162,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 216
+        }
+      }
+    },
+    {
+      "answer_bytes": 257,
+      "content_pass": null,
+      "failure_kind": null,
+      "group": "route",
+      "human_required": true,
+      "known_cost_cny": 0.0004296,
+      "latency_ms_total": 2400,
+      "mechanized_pass": false,
+      "mismatched": null,
+      "model": "Qwen/Qwen3.5-27B",
+      "notes": "",
+      "overall_pass": false,
+      "reason": "覆盖面不足（0.5 < 0.6）",
+      "run_status": "ok",
+      "slot": "low",
+      "task_type_gold": "summary",
+      "test_id": "T24",
+      "total_cost_cny": 0.0004296,
+      "type_mismatched": null,
+      "usage_known": true,
+      "answer_ref": "fixtures/m2-v3-02/raw/route/T24/answers/T24.txt",
+      "answer_sha256": "d702259ec47cee9228cdd2f80570c0965c254ec7363c316b781a00e6c0f5d6d5",
+      "calculation_price_ref": "prices/prices_public_20260928.json",
+      "reported_usage": {
+        "normalized_attempts": [
+          {
+            "attempt_no": 1,
+            "cost_cny": 0.0004296,
+            "latency_ms": 2277,
+            "model": "Qwen/Qwen3.5-27B",
+            "offline_eval": false,
+            "purpose": "generate",
+            "slot": "low",
+            "status": "ok",
+            "unit_price_version": "prices_public_20260928",
+            "usage": {
+              "cached_tokens": 0,
+              "completion_tokens": 67,
+              "prompt_tokens": 180
+            },
+            "usage_known": true
+          }
+        ],
+        "raw_usage": {
+          "completion_tokens": 67,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 180,
+          "prompt_tokens": 180,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 247
+        }
+      }
+    }
+  ]
+}

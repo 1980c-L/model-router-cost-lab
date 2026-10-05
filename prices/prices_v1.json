@@ -1,0 +1,45 @@
+{
+  "version": "prices_v1",
+  "currency": "CNY",
+  "unit": "per_1m_tokens",
+  "fetched_at": "2026-09-26",
+  "source_url": "https://siliconflow.cn/pricing",
+  "note": "按公开单价折算的 API 成本，不代表实际支付金额（免费额度可能把实际支付抵为 0）。价格页面自述『实时价格同步』，跑实验前必须复核并更新 fetched_at。模型 id 已用 tools/list_models.py 在账号内核对（2026-09-26）。",
+  "slots": {
+    "low": "Qwen/Qwen3.5-27B",
+    "high": "zai-org/GLM-5.3"
+  },
+  "models": {
+    "Qwen/Qwen3.5-27B": {
+      "provider": "SiliconFlow",
+      "role": "低成本槽位",
+      "model_id_verified": true,
+      "model_id_checked_at": "2026-09-26",
+      "price_date": "2026-09-26",
+      "fetched_at": "2026-09-26",
+      "source_url": "https://siliconflow.cn/pricing",
+      "input_price_per_1m": 0.6,
+      "output_price_per_1m": 4.8,
+      "cached_input_price_per_1m": null,
+      "note": "价格页为 ≤128k 档（¥0.60 / ¥4.80）；超过 128k 会翻倍（¥1.80 / ¥14.40）。本项目材料远小于 128k，按 ≤128k 档计。无分时计费。"
+    },
+    "zai-org/GLM-5.3": {
+      "provider": "SiliconFlow",
+      "role": "高成本槽位",
+      "model_id_verified": true,
+      "model_id_checked_at": "2026-09-26",
+      "price_date": "2026-09-26",
+      "fetched_at": "2026-09-26",
+      "source_url": "https://siliconflow.cn/pricing",
+      "input_price_per_1m": 8.0,
+      "output_price_per_1m": 28.0,
+      "cached_input_price_per_1m": 2.0,
+      "note": "价格页 ¥8.00 / ¥28.00，缓存命中 ¥2.00。无分时计费。"
+    }
+  },
+  "price_identity": {
+    "low_input_to_high_input_ratio": 13.33,
+    "low_output_to_high_output_ratio": 5.83,
+    "note": "两档价差均 ≥ 5 倍（输入 13.3×、输出 5.83×），满足 02 号选的『价差 ≥5 倍』门槛。"
+  }
+}

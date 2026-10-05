@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+runs/
+output/build_report.json
+output/verify_report.json
+deploy.config.json

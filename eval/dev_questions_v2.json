@@ -1,0 +1,157 @@
+{
+  "version": "dev_v2",
+  "note": "开发集：只用于调试规则、格式与记账链路；M1 的 6 题从这里取（D01/D02/D05/D07/D08/D09）。开发集结果不作为最终结论，也不得混进测试集。材料为自造示例，不引用任何第三方语料。v2（2026-09-26）：D01 题面改为明确抽取指定主体，修掉材料含两个实体时的答案歧义（高成本档真实探针中模型合理返回了两项数组，被判『JSON 顶层不是对象』）。",
+  "questions": [
+    {
+      "test_id": "D01",
+      "task_type_gold": "extract",
+      "question": "请从材料中抽取【检索层重构】这一项的排期信息，输出 JSON，字段：module、owner、deadline、risk_level。",
+      "materials": [
+        "本周项目周会纪要：检索层重构由李工负责，计划 2026-10-15 前完成，当前风险等级评估为中。接口联调由王工负责，时间未定。"
+      ],
+      "constraints": {
+        "require_json": true,
+        "required_fields": ["module", "owner", "deadline", "risk_level"],
+        "material_count": 1
+      },
+      "answer_key": {
+        "module": "检索层重构",
+        "owner": "李工",
+        "deadline": "2026-10-15",
+        "risk_level": "中"
+      },
+      "notes": "4 个字段：不触发 R5（阈值 6），预期走默认档 low"
+    },
+    {
+      "test_id": "D02",
+      "task_type_gold": "extract",
+      "question": "请从缺陷单中抽取 JSON，字段：ticket_id、severity、component、reporter、due_date、status。",
+      "materials": [
+        "缺陷单 BUG-231：严重级别 高，所属组件 向量索引缓存，报告人 陈工，要求 2026-10-08 前修复，当前状态 处理中。"
+      ],
+      "constraints": {
+        "require_json": true,
+        "required_fields": ["ticket_id", "severity", "component", "reporter", "due_date", "status"],
+        "material_count": 1
+      },
+      "answer_key": {
+        "ticket_id": "BUG-231",
+        "severity": "高",
+        "component": "向量索引缓存",
+        "reporter": "陈工",
+        "due_date": "2026-10-08",
+        "status": "处理中"
+      },
+      "notes": "6 个字段：触发 R5，预期走 high"
+    },
+    {
+      "test_id": "D03",
+      "task_type_gold": "extract",
+      "question": "抽取 JSON，字段：contract_id、party、amount。",
+      "materials": ["合同编号 HT-77，签约方 重庆某某科技有限公司，合同金额 12.5 万元。"],
+      "constraints": {
+        "require_json": true,
+        "required_fields": ["contract_id", "party", "amount"],
+        "material_count": 1
+      },
+      "answer_key": {
+        "contract_id": "HT-77",
+        "party": "重庆某某科技有限公司",
+        "amount": "12.5 万元"
+      },
+      "notes": "3 个字段：预期默认档 low"
+    },
+    {
+      "test_id": "D04",
+      "task_type_gold": "extract",
+      "question": "抽取 JSON，字段：device、location、check_date、result。",
+      "materials": ["巡检记录：设备 2 号变压器，位置 东区配电房，检查日期 2026-09-20，检查结果 正常。"],
+      "constraints": {
+        "require_json": true,
+        "required_fields": ["device", "location", "check_date", "result"],
+        "material_count": 1
+      },
+      "answer_key": {
+        "device": "2 号变压器",
+        "location": "东区配电房",
+        "check_date": "2026-09-20",
+        "result": "正常"
+      },
+      "notes": "预期默认档 low"
+    },
+    {
+      "test_id": "D05",
+      "task_type_gold": "qa_grounded",
+      "question": "根据资料说明，BM25 里的 k1 参数控制什么效果？",
+      "materials": [
+        "BM25 的词频部分使用饱和函数：k1 越大，单个词多次出现带来的收益越晚饱和；k1 越小，词频增加带来的收益更快趋于平稳。b 参数控制文档长度归一化的强度。"
+      ],
+      "constraints": { "material_count": 1 },
+      "expect_refusal": false,
+      "notes": "单材料短问：预期默认档 low；人工核 facts_correct 等三项"
+    },
+    {
+      "test_id": "D06",
+      "task_type_gold": "qa_grounded",
+      "question": "根据资料，为什么按标题分节切分片段有利于证据定位？",
+      "materials": [
+        "按标题分节切分可以让同一节内的段落共享 section 标识，命中时能直接指向来源章节，便于人工核对与引用。"
+      ],
+      "constraints": { "material_count": 1 },
+      "expect_refusal": false,
+      "notes": "含“为什么”：命中 R3，预期走 high"
+    },
+    {
+      "test_id": "D07",
+      "task_type_gold": "qa_grounded",
+      "question": "根据资料，MRR 这个指标变大通常说明什么？",
+      "materials": [
+        "MRR 是第一个相关结果出现位置倒数的平均值。相关结果排得越靠前，MRR 越高；如果某题前若干条都拿不到相关结果，该题的倒数记为零。"
+      ],
+      "constraints": { "material_count": 1 },
+      "expect_refusal": false,
+      "notes": "无比较/推理线索词：预期默认档 low"
+    },
+    {
+      "test_id": "D08",
+      "task_type_gold": "summary",
+      "question": "请概括材料关于检索指标的说明，控制在 300 字以内。",
+      "materials": [
+        "检索评测常用三个指标。Hit@K 看规定的证据片段有没有进入前 K 条结果，它的分母是计分题数。MRR 看第一个相关结果排在第几位，位置越靠前分数越高。两个指标都只描述检索结果的位置，不判断最终回答是否正确，因此不能当作答案准确率使用。"
+      ],
+      "constraints": { "material_count": 1, "max_chars": 300 },
+      "criteria": {
+        "max_chars": 300,
+        "coverage_keywords": ["Hit@K", "MRR", "分母"],
+        "forbidden_keywords": ["答案准确率提高"]
+      },
+      "notes": "单材料摘要：预期默认档 low；人工核 no_added_content_by_human"
+    },
+    {
+      "test_id": "D09",
+      "task_type_gold": "summary",
+      "question": "请总结这三段材料共同说明的问题。",
+      "materials": [
+        "第一段：检索结果是否命中，取决于分词与分词权重的设置。",
+        "第二段：命中之后能否答对，取决于证据是否被正确组织进上下文。",
+        "第三段：这两件事需要分开验证，不能用一个指标代替另一个。"
+      ],
+      "constraints": { "material_count": 3, "max_chars": 200 },
+      "criteria": {
+        "max_chars": 200,
+        "coverage_keywords": ["检索", "生成", "验证"],
+        "forbidden_keywords": ["准确率提升"]
+      },
+      "notes": "三段材料：命中 R2，预期走 high"
+    },
+    {
+      "test_id": "D10",
+      "task_type_gold": "qa_grounded",
+      "question": "根据资料，本项目的 embedding 模型是哪一个？",
+      "materials": ["本项目正式检索基线使用 jieba 分词与自实现 BM25，不依赖向量库。"],
+      "constraints": { "material_count": 1 },
+      "expect_refusal": true,
+      "notes": "资料外问题：期望模型回答“资料中未找到相关依据”"
+    }
+  ]
+}

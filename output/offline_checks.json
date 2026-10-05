@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-04",
+  "scope": "published copy, loopback-only stubs and frozen-answer replay; no real model calls",
+  "results": [
+    {
+      "name": "m1",
+      "exit": 0,
+      "passed": 128,
+      "total": 128,
+      "ok": true,
+      "failed_checks": []
+    },
+    {
+      "name": "build",
+      "exit": 0,
+      "passed": 26,
+      "total": 26,
+      "ok": true,
+      "failed_checks": []
+    },
+    {
+      "name": "candidate",
+      "exit": 0,
+      "passed": 35,
+      "total": 35,
+      "ok": true,
+      "failed_checks": []
+    },
+    {
+      "name": "m2",
+      "exit": 0,
+      "passed": 137,
+      "total": 137,
+      "ok": true,
+      "failed_checks": []
+    }
+  ],
+  "source_sha256": {
+    "contract.py": "f57a7f389b11911409813d89d8cba4cd4d1317250c651dc6bed2527564efeb57",
+    "grade.py": "2b1a60ca19c38dd19b5d6f6dba49bd4e9e4ff06a7fb368d8fab7f8b260124f82",
+    "ledger.py": "fb2cce4210082e048e6ae4bd52efce90f077fc45a3a636b6744c92ac03952254",
+    "m2_batch.py": "c65fc6213d4d4533345d3922495a71f0e7ff6c24b6c09224124d6e952817b437",
+    "m2_reconcile.py": "ec95a1a8ce22cec36d18b7051c3027c45b6dd9f7f519efda90d5b9b97e7b4c5e",
+    "metrics.py": "e3e39c5ca0ee29b68ad68cdb2ed8c3d7c422cf67a960b295dce1d6d9d6a5c335",
+    "pricing.py": "80c37d5d8a70c5af06d2667cfe44328a868656bca3e35b33de7188d15986f2b8",
+    "router.py": "cab7bbc20da57c917e630a855b4cbb067dc46196236dbe26175dd74633fc47ed",
+    "runner.py": "a663c427c811921ad09d10eb149a242d1ca9251e19d3f81538754556937b0366",
+    "verify_m1.py": "42bee0087eb64db88296857de8beebd00ba89669890ddbc20ae75db956e96feb",
+    "verify_m2.py": "c3e13775a28ebef6cf85718f00e33e338e5b209be9605b84147c189dfacb00a2",
+    "fixtures/grade_frozen.py": "ee436f2d60f47fb0a155d6af70b769433258a578351c4bcd2bbfec624321b82c",
+    "fixtures/grade_rev1.py": "25347273478e8383ccdb294dbe5b4103ca652eaed773b135b67561a87bfa5203",
+    "tools/approval_m2.py": "34cfd87803e530e99ba266c3a5b6e14894a2e4b00a0d5924bc628596fa772d9b",
+    "tools/build_scoring_candidate_v3.py": "5f84be00a07606f0f5c5c3838796d0cdf358ff84115677de5dc83e51525bc1d7",
+    "tools/build_test_questions_v1.py": "57262942048392b2ee59b95853087246d716093696cc4290e5de277e7513460c",
+    "tools/build_test_questions_v3.py": "d6b3efbdff78508701a34f91a91caa942b076e0795fd21e4ac134e72150012fa",
+    "tools/list_models.py": "33e86c4fb23b67c27f5bd7516ea04598ca69b380218998ecb3f9df85be2de94d",
+    "tools/make_review_sheet.py": "e6320fd5f7f9cdfaaa717eed526a2edf53703fb59286bf29e2c243d3c3a8e107",
+    "tools/review_m2.py": "2cbcfa043a178a07187f318bbe9607c21b95b45da021c06b6be376dee042bf56",
+    "tools/stub_llm_server.py": "ab50a94615b8296a53b53ddabd67e6abf8a98b6c4c3f94cdf1d74cd74f8044fd",
+    "tools/summarize_run.py": "6e49b27d0b17fe67a829afd6aba6c8cc3eabd99f383d54da9f0ed1141f3c0033",
+    "tools/verify_scoring_candidate_v3.py": "972e0fa242dd776d7cfcdb87a3735b32afc7d2ccdbe3308559792e44dc52a33f"
+  }
+}

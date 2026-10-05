@@ -1,0 +1,1 @@
+{"hostname":"srv-db-02","cpu_percent":62.5,"mem_percent":71,"disk_percent":83,"uptime_days":147,"alert_level":"中"}

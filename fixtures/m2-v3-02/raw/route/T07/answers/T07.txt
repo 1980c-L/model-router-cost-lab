@@ -1,0 +1,1 @@
+{"exp_id": "EXP-12", "subject": "催化剂载体耐久性", "sample_size": 40, "duration_days": 21, "result": "初步通过稳定性测试", "approved_by": null}

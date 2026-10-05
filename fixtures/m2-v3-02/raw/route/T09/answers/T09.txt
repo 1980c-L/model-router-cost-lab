@@ -1,0 +1,1 @@
+{"event_name":"公司秋季发布会","date":"2026-10-20","venue":"滨江国际会展中心 3 号厅","online_viewers":23000,"speaker_count":9}

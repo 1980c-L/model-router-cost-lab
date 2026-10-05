@@ -1,0 +1,1 @@
+{"course_name": "新员工入职培训", "trainer": "刘倩", "room": "B-201", "headcount": 32}

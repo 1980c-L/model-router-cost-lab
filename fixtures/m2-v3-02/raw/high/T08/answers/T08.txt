@@ -1,0 +1,1 @@
+{"campus":"南校区","item":"篮球记分牌","qty":6,"budget_owner":"学生活动科"}

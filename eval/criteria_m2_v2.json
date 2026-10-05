@@ -1,0 +1,39 @@
+{
+  "version": "criteria_m2_v2",
+  "frozen_at": "2026-09-28",
+  "inherits": "criteria_m2_v1",
+  "note": "M2 判据 v2：机检规则（coverage_threshold、refusal_phrase、summary_human_items、extract/qa/summary 的整体达标合成）逐字继承 criteria_m2_v1，**不改任何阈值或人工项**；本次只补记抽取题的输出契约原则，并把版本指向 test_questions_v3.json。criteria_m2_v1.json 与 test_questions_v2.json 的字节保持不变，供旧批次诊断复核。",
+  "coverage_threshold": 0.6,
+  "refusal_phrase": "资料中未找到相关依据",
+  "summary_human_items": [
+    "facts_covered_by_human",
+    "no_added_content_by_human"
+  ],
+  "overall_pass_rule": {
+    "extract": "format_pass（JSON 可解析 + 必填字段齐全）AND content_pass（与 answer_key 逐字段一致）；无人工项（与 criteria_v1 相同）",
+    "qa_grounded": "机检通过（非空 AND 期望拒答时含拒答短语）AND 人工三项 facts_correct / no_unsupported_claim / citation_supports（与 criteria_v1 相同）",
+    "summary": "mechanized_pass（长度不超上限 AND 覆盖关键词比例 >= coverage_threshold AND 无禁止词）AND 人工两项 facts_covered_by_human / no_added_content_by_human",
+    "unknown": "无法判定：只记 not_empty 并标人工（task_type_unrecognized）"
+  },
+  "human_items": {
+    "facts_correct": "关键事实是否与资料一致",
+    "no_unsupported_claim": "是否出现资料不支持的说法",
+    "citation_supports": "给出的依据或引用是否支持结论",
+    "facts_covered_by_human": "摘要对题集预冻结 summary_facts 的逐事实点语义覆盖：人工逐点记 true/false，全部必须事实点正确覆盖才通过；合法同义改写可以满足，关键词出现不能替代人工判断",
+    "no_added_content_by_human": "摘要是否新增了材料中没有的内容"
+  },
+  "notes": [
+    "机检与人工结果分别保留，人工不直接覆盖机检失败（11 号 §3）。",
+    "人工完成前 overall_pass 一律为 false，不得用机检结果代替人工结论。",
+    "题目的判据参数（answer_key / coverage_keywords / max_chars / expect_refusal / summary_facts）随题集 test_questions_v3.json 一起冻结；真实运行后不得临时放宽。",
+    "关键词覆盖沿用 coverage_threshold=0.6，逐题固定关键词（继承 criteria_m2_v1）。",
+    "v2 判据的抽取契约原则见 extract_contract_rules；旧判据 criteria_m2_v1 的历史行为不变。"
+  ],
+  "questions_version": "test_v3",
+  "extract_contract_rules": [
+    "受类型或单位约束的字段，必须在**模型实际收到的题面**里声明，并与 constraints.field_types、answer_key 三处一致；不得靠答案键或评分器隐含类型/单位要求。",
+    "评分器保持严格比较（JSON 可解析、必填字段、声明类型、字段值精确一致，数字按 1e-9 容差、布尔与数字分开）：不做语义归一，等价改写不自动通过；要放宽只能改题面契约并升版本重跑。",
+    "正确标准答案自身必须通过冻结判据（金答案自洽）。",
+    "本轮（首轮真实批次）的 41 次调用与旧判据结果保留为诊断证据，不因 v3 校准而改写。"
+  ]
+}
